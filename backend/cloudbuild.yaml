@@ -1,0 +1,26 @@
+
+steps:
+  # 1. Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'europe-west1-docker.pkg.dev/aidodev-academy/backend-repo/backend-image:$SHORT_SHA'
+      - '.'
+
+  # 2. Push the Docker image to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'europe-west1-docker.pkg.dev/aidodev-academy/backend-repo/backend-image:$SHORT_SHA'
+
+  # 3. Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args:
+      - 'run'
+      - 'services'
+      - 'update'
+      - 'backend-service'
+      - '--image=europe-west1-docker.pkg.dev/aidodev-academy/backend-repo/backend-image:$SHORT_SHA'
+      - '--region=europe-west1'

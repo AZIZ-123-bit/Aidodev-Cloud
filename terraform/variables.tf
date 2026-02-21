@@ -10,7 +10,19 @@ variable "region" {
 }
 
 variable "app_name" {
-  description = "The name of the application (used for resources naming)"
+  description = "The name of the application (used for resource naming)"
   type        = string
   default     = "workshop-app"
+}
+
+variable "backend_image" {
+  description = "Docker image URL for the backend Cloud Run service"
+  type        = string
+  default     = "us-docker.pkg.dev/cloudrun/container/hello"
+}
+
+variable "frontend_image" {
+  description = "Docker image URL for the frontend Cloud Run service"
+  type        = string
+  default     = "us-docker.pkg.dev/cloudrun/container/hello"
 }
