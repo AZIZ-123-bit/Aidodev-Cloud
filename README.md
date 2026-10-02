@@ -1,27 +1,45 @@
-# Academy Workshop: Building with Google Antigravity
+# Google Cloud Academy Workshop — Cloud-Native Application
 
-Welcome to the Academy Workshop! In this session, you will use **Google Antigravity**, an agentic IDE, to develop and deploy a cloud-native application on Google Cloud.
+A hands-on cloud development project built using Google Antigravity and Google Cloud.
 
-## 🎯 Workshop Goals
-1.  **Experience Agentic Development**: Use Antigravity to generate code, infrastructure, and documentation.
-2.  **Provision Cloud Infrastructure**: Use Terraform to set up Artifact Registry, Cloud Storage, and Cloud Run.
-3.  **Deploy a Web Application**: Build and deploy a simple web application to the cloud.
+## 🎯 Project Goals
 
-## 🛠️ Prerequisites
--   Access to **Google Antigravity**.
--   A **Google Cloud Project** with billing enabled.
--   **Google Cloud SDK** (gcloud) installed and authenticated.
--   **Terraform** installed (optional, Antigravity can help you run it).
+- Experience agentic development with Google Antigravity
+- Provision cloud infrastructure using Terraform
+- Deploy a web application using Google Cloud
+- Work with Cloud Run, Artifact Registry, and Cloud Storage
+- Practice cloud-native development and infrastructure management
 
-## 📚 Documentation
+## 🛠️ Technologies
 
-Please follow the steps below to get started:
+- Google Antigravity
+- Google Cloud
+- Terraform
+- Cloud Run
+- Artifact Registry
+- Cloud Storage
+- Google Cloud SDK
 
-### 1. [Prepare Your Local Environment](./docs/01-prepare-your-local-env/01-install-node.md)
-> ⚠️ **Important:** Please complete this setup **before** the workshop starts.
+## 📚 Workshop Documentation
 
-### 2. [Getting Started](./docs/02-getting-started.md)
-Explore the IDE, provision infrastructure, and build your app.
+### 1. Prepare Your Local Environment
 
-### 3. [Clean Up](./docs/03-clean-up.md)
-Destroy resources to avoid charges.
+See [`docs/01-prepare-your-local-env/01-install-node.md`](./docs/01-prepare-your-local-env/01-install-node.md)
+
+### 2. Getting Started
+
+See [`docs/02-getting-started.md`](./docs/02-getting-started.md)
+
+### 3. Clean Up
+
+See [`docs/03-clean-up.md`](./docs/03-clean-up.md)
+
+> Remember to destroy unused cloud resources to avoid unnecessary charges.
+
+## ☁️ Cloud Architecture
+
+The project provisions cloud infrastructure with Terraform and deploys the application using Google Cloud services.
+
+## 👨‍💻 Author
+
+Mohamed Aziz Ben Salah
